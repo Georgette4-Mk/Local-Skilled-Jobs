@@ -6,13 +6,15 @@
     <title>post a job page</title>
     <script src="https://kit.fontawesome.com/f8816b6217.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
     <div class="side-bar">
         <ul>
             <li>
-                <i class="fa-solid fa-house"></i> <a href="#" class="active">Dashboard</a>
+                <i class="fa-solid fa-house"></i> <a href="#" class="activ">Dashboard</a>
             </li>
             <li>
                 <i class="fa-regular fa-message"></i> <a href="#">Messages</a>
@@ -45,116 +47,108 @@
     </div>
     </div>
     <div class="social-media">
-        <h1>Social Media Assistants</h1>
-        <i class="fa-solid fa-arrow-left-long"></i>
-        <p>Design . Full-Time .4/11 Hired</p>
-        <div class="social">
-            <h2>Applicants</h2>
-            <h2>Job Details</h2>
-            <h2>Analytics</h2>
-        </div>
+        <h1>Job Listing</h1>
+        <p>Here is your jobs listing status from July 19-July 25</p>
         <div class="select">
-        <select name="more action" class="select-box" id="more action">
-            <option value="more action">More Action </option>
-        </select>
-        <i class="fa solid fa-caret-down"></i>
+       <input type="date">
         </div>
     </div>
     <div class="title">
-        <div class="sub-title">
-            <h2> Total Applicants:10 </h2>
-            <div class="search-tab">
-                <input type="text" value="search" id="search" placeholder="search Applicants">
-            </div>
-            <input type="text" value="filter" id="filter" class="filter">
-            <div class="view">
-               <p> Pipeline view</p>
-               <span>Table view</span>
-            </div>
-        </div>
+       <h2>Job List</h2>
     </div>
     <main class="table">
         <section class="table-body">
-            <table>
+                <table>
                 <thead>
                     <tr>
-                        <th><input type="checkbox" class="boxs"><pre class="full">Full Name</pre></th>
+                        <th><input type="checkbox" class="boxs" onchange="checkAll(this)"><pre class="full">Roles</pre></th>
                         <th class="score"><pre>Score</pre></th>
-                        <th class="hire"><pre>Hiring Stage</pre></th>
-                        <th class="date"><pre> Date</pre></th>
-                        <th class="action"><pre>Action</pre></th>
+                        <th class="hire"><pre>status</pre></th>
+                        <th class="date"><pre> Date posted</pre></th>
+                        <th class="action"><pre>Due Date</pre></th>
+                        <th class="action"><pre> Job Type</pre></th>
+                        <th class="action"><pre>Applicants</pre></th>
+                        <th class="action"><pre>Needs</pre></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                       <td><input type="checkbox" class="box"><i class="fa-solid fa-user"></i> tamufor Josial</td>
+                       <td><input type="checkbox" class="box">Electrician</td>
                         <td>00</td>
-                        <td><p class="review"> In Review</p></td>
-                        <td>13 July 2024</td>
-                        <td><p class="see">See Application</p><p class="dot">...</p></td>
+                        <td><p class="live"> live</p></td>
+                        <td>20 May 2024</td>
+                        <td>24 May 2024</td>
+                        <td><p class="fulltime"> Fulltime</p></td>
+                        <td>19</td>
+                        <td>4/11</td>
+                        <td><p class="dot">...</p></td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class="box"><i class="fa-solid fa-user"></i> Abang Hawkins</td>
+                        <td><input type="checkbox" class="box">Carpenter</td>
                          <td>00</td>
-                         <td><p class="review">In Review</p></td>
-                         <td>13 July 2024</td>
-                         <td><p class="see">See Application</p><p class="dot2">...</p></td>
+                         <td><p class="live">live</p></td>
+                         <td>16 May 2024</td>
+                         <td>20 May 2024</td>
+                         <td><p class="fulltime"> Fulltime</p></td>
+                         <td>1,234</td>
+                         <td>0/20</td>
+                         <td><p class="dot2">...</p></td>
                      </tr>
                      <tr>
-                        <td><input type="checkbox" class="box"><i class="fa-solid fa-user"></i> Njei Michel</td>
+                        <td><input type="checkbox" class="box">Cook</td>
                          <td>4.5</td>
-                         <td><p class="short">Shortlisted</p></td>
-                         <td>12 July 2024</td>
-                         <td><p class="see">See Application</p><p class="dot3">...</p></td>
+                         <td><p class="live">live</p></td>
+                         <td>15 May 2024</td>
+                         <td>24 May 2024</td>
+                         <td><p class="parttime"> Parttime</p></td>
+                         <td>2,435</td>
+                         <td>1/5</td>
+                         <td><p class="dot3">...</p></td>
                      </tr>
                      <tr>
-                        <td><input type="checkbox" class="box"><i class="fa-solid fa-user"></i> Leif Floyd</td>
+                        <td><input type="checkbox" class="box">Barber</td>
                          <td>3.75</td>
-                         <td><p class="decline">Declined</p></td>
-                         <td>11 July 2024</td>
-                         <td><p class="see">See Application</p><p class="dot4">...</p></td>
+                         <td><p class="closed">closed</p></td>
+                         <td>13 May 2024</td>
+                         <td>24 May 2024</td>
+                         <td><p class="parttime"> Parttime</p></td>
+                         <td>6,234</td>
+                         <td>10/10</td>
+                         <td><p class="dot4">...</p></td>
                      </tr>
                      <tr>
-                        <td><input type="checkbox" class="box"><i class="fa-solid fa-user"></i> Njie Berylangel</td>
+                        <td><input type="checkbox" class="box">Cobbler</td>
                          <td>4.8</td>
-                         <td><p class="hired">Hired</p></td>
-                         <td>11 July 2024</td>
-                         <td><p class="see">See Application</p><p class="dot5">...</p></td>
+                         <td><p class="closed">closed</p></td>
+                         <td>12 May 2024</td>
+                         <td>24 May 2024</td>
+                         <td><p class="fulltime"> Fulltime</p></td>
+                         <td>12</td>
+                         <td>20/20</td>
+                         <td><p class="dot5">...</p></td>
                      </tr>
                      <tr>
-                        <td><input type="checkbox" class="box"><i class="fa-solid fa-user"></i> Geogertte moki</td>
+                        <td><input type="checkbox" class="box">Hair Dresser</td>
                          <td>4.6</td>
-                         <td><p class="hired">Hired</p></td>
-                         <td>09 July 2024</td>
-                         <td><p class="see">See Application</p><p class="dot6">...</p></td>
+                         <td><p class="closed">closed</p></td>
+                         <td>11 May 2024</td>
+                         <td>24 July 2024</td>
+                         <td><p class="fulltime"> Fulltime</p></td>
+                         <td>14</td>
+                         <td>10/10</td>
+                         <td><p class="dot6">...</p></td>
                      </tr>   <tr>
-                        <td><input type="checkbox" class="box"><i class="fa-solid fa-user"></i> Ngwa Robert Robertson</td>
+                        <td><input type="checkbox" class="box">Cleaner</td>
                          <td>4.0</td>
-                         <td><p class="interview">Interview</p></td>
-                         <td>05 July 2024</td>
-                         <td><p class="see">See Application</p><p class="dot7">...</p></td>
+                         <td><p class="closed">closed</p></td>
+                         <td>12 May 2024</td>
+                         <td>24 May 2024</td>
+                         <td><p class="fulltime"> Fulltime</p></td>
+                         <td>12</td>
+                         <td>20/20</td>
+                         <td><p class="dot7">...</p></td>
                      </tr>
-                     <tr>
-                        <td><input type="checkbox" class="box"><i class="fa-solid fa-user"></i> Eleanor Pena</td>
-                         <td>3.90</td>
-                         <td><p class="decline">Declined</p></td>
-                         <td>05 July 2024</td>
-                         <td><p class="see">See Application</p><p class="dot8">...</p></td>
-                     </tr>
-                     <tr>
-                        <td><input type="checkbox" class="box"><i class="fa-solid fa-user"></i> Bih Nadia</td>
-                         <td>4.20</td>
-                         <td><p class="short">Shortlisted</p></td>
-                         <td>03 July 2024</td>
-                         <td><p class="see">See Application</p><p class="dot9">...</p></td>
-                     </tr>
-                     <tr>
-                        <td><input type="checkbox" class="box"><i class="fa-solid fa-user"></i> Tekum Primus</td>
-                         <td>4.10</td>
-                         <td><p class="interview">Interview</p></td>
-                         <td>01 July 2024</td>
-                         <td><p class="see">See Application</p><p class="dot10">...</p></td>
-                     </tr>
+                    
                 </tbody>
             </table>
         </section>
@@ -171,5 +165,36 @@
         </div>
     </div>
     </div>
+    <script>
+        var checkboxes = document.querySelectorAll("input[type = 'checkbox']");
+       function checkAll(mycheckbox){
+        if(mycheckbox.checked == true){
+            checkboxes.forEach(function(checkbox){
+                checkbox.checked = true
+            });
+        }
+        else{
+            checkboxes.forEach(function(checkbox){
+                checkbox.checked = false;
+            }
+        );
+        }
+       }
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        </script>
 </body>
 </html>

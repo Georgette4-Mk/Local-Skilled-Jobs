@@ -37,10 +37,10 @@ h1:last-child{
     bottom: 1rem;
     width: 100%;
 }
-/*.side-bar ul li a.active{
-    background-color: darkgray;
+.side-bar ul li a.active{
+    background-color: rgba(76, 0, 130, 0.159);
     color: indigo;
-    margin: 10px;
+    margin: 5px;
 }
 .side-bar ul li a.active:before{
     content: '';
@@ -51,26 +51,31 @@ h1:last-child{
 .side-bar ul li a.active i{
     color: indigo;
     margin-left: calc(1rem - 3px);
+    background-color: rgba(76, 0, 130, 0.279);
 }
 .side-bar ul li a:hover{
     color: indigo;
+    background-color: rgba(76, 0, 130, 0.236);
 }
 .side-bar ul li a:hover i{
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
-*/
-.main{
-    display: block;
 
+.main{
+    
+    width: 200px;
+    
 }
 .head{
     display: flex;
     justify-content: center;
     border: solid 1px;
-    background-color: #fff;
+    
     height: 70px;
     align-items: center;
-    width: 100vw;
+    width: 1100px;
+    position: absolute;
+    left: 190px;
     
 }
 .head h2{
@@ -89,13 +94,12 @@ margin-right: 20px;
 .social-media{
     display: grid;
     position: absolute;
-    top: 100px;
-    left: 170px;
+    top: 80px;
+    left: 120px;
     width: 500px;
     padding-left: 100px;
-    overflow: hidden;
 }
-.social-media h1{
+.social-media .h1{
     font-size: 25px;
     font-weight: 800;
     margin-bottom: 10px;
@@ -104,25 +108,19 @@ margin-right: 20px;
     font-size: 15px;
     margin-bottom: 15px;
 }
-.social-media i{
-    position: absolute;
-    top: 15px;
-    left: 50px;
-    font-size: 30px;
-
-}
-.social{
+.tab-titles{
     display: flex;
     gap: 20px;
     font-size: 10px;
     color: gray;
 }
+
 .select{
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    left: 950px;
-    bottom: 20px;
+    left: 990px;
+    bottom: 10px;
     min-width: 120px;
     height: 40px;
 }
@@ -132,7 +130,7 @@ margin-right: 20px;
     padding-left: 20px;
     width: 100px;
     color: black;
-    background-color: white;
+    background-color: #fff;
     font-size: 12px;
 }
 .select i{
@@ -145,54 +143,30 @@ margin-right: 20px;
 .title{
     display: flex;
     position: absolute;
-    left: 200px;
-    top: 220px;
+    left: 210px;
+    top: 160px;
+    border: solid 1px lightgray;
+    width: 1000px;
+    padding: 20px;
 }
-.title .sub-title{
-    display: flex;
-}
-.title .sub-title h2{
-    font-size: 20px;
-}
-.title .sub-title .search-tab{
-    margin-left: 200px;
-}
-.title .sub-title .view{
-    display: flex;
-    margin-left: 30px;
-    color: indigo;
-    background-color: rgba(76, 0, 130, 0.112);
-    width: 200px;
-    padding-left: 30px;
-    height: 30px;
-    padding-top: 10px;
-}
-.title .sub-title .view span{
-    position: absolute;
-    top: 3px;
-    right: 6px;
-    background-color: white;
-    height: 27px;
-    width: 89px;
-    padding-left: 15px;
-    padding-top: 5px;
-}
+
+
 .table-body{
     display: flex;
     position: absolute;
     right: 600px;
-    top: 300px;
+    top: 230px;
     font-family: sans-serif;
-    left: 200px;
-    background-color: white;
-    width: 1020px;
+    left: 250px;
+    background-color: #fff;
+    width: 1000px;
     border-radius: .8rem;
     justify-content: center;
-    height: 800px;
+    height: 600px;
     
 }
 .table{
-    width: 100%;
+    width: 100px;
 }
 tbody{
     border: solid 1px lightgray;
@@ -214,9 +188,9 @@ table, th, td{
     border-collapse: collapse;
 }
  thead th{
-    margin-left: 10px;
+    margin-left: 100px;
     color: gray;
-    padding-right: 150px;
+    padding-right: 80px;
     background-color: white;
     font-size: small;
     height: 30px;
@@ -224,6 +198,7 @@ table, th, td{
 
 .table-body tbody td {
     font-size: 14px;
+    width: 100%;
 }
 tbody tr:nth-child(even){
     background-color: rgba(76, 0, 130, 0.044);
@@ -240,106 +215,90 @@ tbody tr:hover{
     color: orange;
 }
 .see{
-    background-color: white;
-    width: 100px;
-    border: solid 1px indigo;
-    padding-left: 9px;
-    color: indigo;
-    
+    color: black;
+    height: 30px;
+    padding-top: 10px;
 }
-.interview{
+
+.closed{
+    background-color: white;
+    width: 50px;
+    border-radius: 1rem;
+    border: solid 1px red;
+    padding-left: 10px;
+    color:red;
+}
+.live{
+    background-color: white;
+    width: 40px;
+    border-radius: 1rem;
+    border: solid 1px lightgreen;
+    padding-left: 15px;
+    color: lightgreen;
+}
+.fulltime{
     background-color: white;
     width: 70px;
     border-radius: 1rem;
-    border: solid 1px skyblue;
-    padding-left: 20px;
-    color:skyblue;
+    border: solid 1px indigo;
+    padding-left: 15px;
+    color: indigo;
 }
-.short{
+.parttime{
     background-color: white;
     width: 70px;
     border-radius: 1rem;
-    border: solid 1px indigo;
-    padding-left: 7px;
-    color: indigo;
+    border: solid 1px greenyellow;
+    padding-left: 15px;
+    color:greenyellow;
 }
-.hired{
-        background-color: white;
-        width: 40px;
-        border-radius: 1rem;
-        border: solid 1px  rgba(255, 0, 212, 0.301);;
-        padding-left: 10px;
-        color: rgba(255, 0, 212, 0.301);
-    }
-    .decline{
-        background-color: white;
-        width: 70px;
-        border-radius: 1rem;
-        border: solid 1px  gold;
-        padding-left: 10px;
-        color: gold;
-    }
+
+
+
     .dot{
         display: flex;
         position: absolute;
-        top: 44px;
-        right: 40px;
+        top: 52px;
+        right: 10px;
         font-size: 30px;
     }
     .dot2{
         position: absolute;
-        top: 120px;
-        right: 40px;
+        top: 130px;
+        right: 10px;
         font-size: 30px;
     }
     .dot3{
         position: absolute;
-        top: 197px;
-        right: 40px;
+        top: 210px;
+        right: 10px;
         font-size: 30px;
     }
     .dot4{
         position: absolute;
-        top: 280px;
-        right: 40px;
+        top: 290px;
+        right: 10px;
         font-size: 30px;
     }
     .dot5{
         position: absolute;
-        top: 350px;
-        right: 40px;
+        top: 370px;
+        right: 10px;
         font-size: 30px;
     }
     .dot6{
         position: absolute;
-        top: 430px;
-        right: 40px;
+        top: 450px;
+        right: 10px;
         font-size: 30px;
     }
     .dot7{
         position: absolute;
-        top: 504px;
-        right: 40px;
+        top: 530px;
+        right: 10px;
         font-size: 30px;
     }
-    .dot8{
-        position: absolute;
-        top: 580px;
-        right: 40px;
-        font-size: 30px;
-    }
-    .dot9{
-        position: absolute;
-        top: 658px;
-        right: 40px;
-        font-size: 30px;
-    }
-    .dot10{
-        position: absolute;
-        top: 733px;
-        right: 40px;
-        font-size: 30px;
-    }
+   
 .table-body tbody {
     color:black;
 }
@@ -355,11 +314,12 @@ tbody tr:hover{
     display: flex;
     position: absolute;
     right: 600px;
-    top: 1115px;
+    top: 850px;
+    
 }
 .simi-footer{
     position: absolute;
-    right: 220px;
+    right: 200px;
     display: flex;
 }
 .simi-footer p{
@@ -376,6 +336,9 @@ tbody tr:hover{
     padding-left: 10px;
     padding-top: 10px;
 }
+.simi-footer h4{
+    margin-top: 10px;
+}
 .number{
     position: absolute;
     left: 450px;
@@ -384,7 +347,8 @@ tbody tr:hover{
 .number p{
     display: flex;
     position: absolute;
-    left: 40px;
+    left: 60px;
+    top: 5px;
 }
 .number span{
     color: #fff;
@@ -396,5 +360,12 @@ tbody tr:hover{
 }
 .number h2{
     position: absolute;
-    left: 10px;
+    left: -30px;
+}
+.number h3{
+    position: absolute;
+    left: 90px;
+    bottom: 2px;
+    font-size: 22px;
+    font-weight: bolder;
 }

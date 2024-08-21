@@ -55,6 +55,14 @@ h1:last-child{
     margin-left: calc(1rem - 3px);
     background-color: rgba(76, 0, 130, 0.279);
 }
+.side-bar ul li a:hover{
+    color: indigo;
+    background-color: rgba(76, 0, 130, 0.236);
+}
+.side-bar ul li a:hover i{
+    margin-left: 0.5rem;
+}
+
 .signup{
     width: 360px;
     height:100px ;

@@ -3,7 +3,58 @@ body{
     height: 100vh;
     font-family: sans-serif;
 }
+.container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+}
+.side-bar{
+   height: 100vh;
+   background-color: rgba(138, 12, 228, 0.058);
+   margin: 0;
+   position: fixed;
+   overflow: visible;
+   
+}
+.side-bar ul li{
+    list-style: none;
+    padding-bottom: 30px;
+}
+.side-bar ul li a{
+    text-decoration: none;
+    color: gray;
+    margin-left: 1rem;
+    
+}
+.side-bar ul li i{
+    padding-right: 5px;
+    color: indigo;
+    transition: all 3s ease;
 
+}
+h1:last-child{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+.side-bar ul li a.active{
+    background-color: rgba(76, 0, 130, 0.159);
+    color: indigo;
+    margin: 5px;
+}
+.side-bar ul li a.active:before{
+    content: '';
+    width: 10px;
+    height: 100%;
+    background-color: indigo;
+}
+.side-bar ul li a.active i{
+    color: indigo;
+    margin-left: calc(1rem - 3px);
+    background-color: rgba(76, 0, 130, 0.279);
+}
 .signup{
     width: 360px;
     height:100px ;

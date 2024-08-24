@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>LJ</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../dash2/index.html" class="active">Dashboard</a></li>
+                    <li><a href="../messages/messaging.html">Messages</a></li>
+                    <li><a href="../applications/Applications.html">My Applications</a></li>
+                    <li><a href="../listing/Jobs.html">Find Jobs</a></li>
+                    <li><a href="Brows.html">Browse Companies</a></li>
+                    <li><a href="Profile.html">My Public Profile</a></li>
+                </ul>
+            </nav>
+            <div class="settings">
+                <a href="#">Settings</a>
+                <a href="#">Help Center</a>
+            </div>
+        </aside>
+        
+        <main class="content">
+            <header class="dashboard-header">
+                <h1>Dashboard</h1>
+                <div class="header-actions">
+                   
+                    <button class="btn custom-button" onclick="goToHomepage()">
+                        
+                        <li style="list-style-type: none;">
+                            <a href="../../landing/index.html">Back to Homepage</a>
+                        </li>
+                    </button>
+                    
+                    
+                
+                </div>
+            </header>
+
+            <section class="overview">
+                <div class="overview-card">
+                    <h2>Total Jobs Applied</h2>
+                    <p>45</p>
+                </div>
+                <div class="overview-card">
+                    <h2>Jobs Applied Status</h2>
+                    <div id="statusChart"></div>
+                    <p>60% Unsuitable, 40% Interviewed</p>
+                </div>
+                <div class="overview-card">
+                    <h2>Interviewed</h2>
+                    <p>18</p>
+                </div>
+                <div class="overview-card">
+                    <h2>Upcoming Interviews</h2>
+                    <p>26 November</p>
+                    <p>10:00 AM - Joe Bartmann (HR Manager at Divvy)</p>
+                </div>
+            </section>
+
+            <section class="applications-history">
+                <h2>Recent Applications History</h2>
+                <ul>
+                    <li>
+                        <div class="app-info">
+                            <h3>Social Media Assistant</h3>
+                            <p>Nomad - Paris, France - Full-Time</p>
+                            <p>Date Applied: 24 July 2021</p>
+                        </div>
+                        <div class="app-status">In Review</div>
+                    </li>
+                    <li>
+                        <div class="app-info">
+                            <h3>Social Media Assistant</h3>
+                            <p>Udacity - New York, USA - Full-Time</p>
+                            <p>Date Applied: 23 July 2021</p>
+                        </div>
+                        <div class="app-status">Shortlisted</div>
+                    </li>
+                    <li>
+                        <div class="app-info">
+                            <h3>Social Media Assistant</h3>
+                            <p>Packer - Madrid, Spain - Full-Time</p>
+                            <p>Date Applied: 22 July 2021</p>
+                        </div>
+                        <div class="app-status">Declined</div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

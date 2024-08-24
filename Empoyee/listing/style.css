@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+    color: #121313;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #2e59d9;
+    color: white;
+    width: 240px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.profile-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li.active a,
+.menu ul li a:hover {
+    color: #f8f9fc;
+    background-color: #4e73df;
+    padding: 10px;
+    border-radius: 5px;
+}
+.settings {
+    margin-top: auto;
+}
+
+.settings a {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.search-filters {
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-input, .location-input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: #5C67F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filter-group {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+.job-card p {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.job-meta {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #5C67F2;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.pagination a.active {
+    font-weight: bold;
+    background-color: #5C67F2;
+    color: white;
+}
+
+.btn-filter {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-pagination {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-pagination:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+

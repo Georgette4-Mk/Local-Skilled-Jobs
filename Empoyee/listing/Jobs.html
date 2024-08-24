@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHuntly - Find Jobs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile.jpg" alt="Jake Gyll" class="profile-pic">
+                <div class="profile-info">
+                    <h3>Jake Gyll</h3>
+                    <p>jakegyll@email.com</p>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../dash2/index.html">Dashboard</a></li>
+                    <li><a href="../messages/messaging.html">Messages</a></li>
+                    <li><a href="../applications/Applications.html">My Applications</a></li>
+                    <li><a href="../listing/Jobs.html" class = "active">Find Jobs</a></li>
+                    <li><a href="Brows.html">Browse Companies</a></li>
+                    <li><a href="Profile.html">My Public Profile</a></li>
+                </ul>
+            </nav>
+            <div class="settings">
+                <a href="#">Settings</a>
+                <a href="#">Help Center</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Search and Filters Section -->
+            <button class="btn">Back to Homepage</button></div>
+            <section class="search-filters">
+                <div class="search-bar">
+                    <input type="text" placeholder="Job title or keyword" class="search-input">
+                    <input type="text" placeholder="Florence, Italy" class="location-input">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <h4>Type of Employment</h4>
+                        <label><input type="checkbox"> Full-time</label>
+                        <label><input type="checkbox"> Part-time</label>
+                        <label><input type="checkbox"> Remote</label>
+                        <label><input type="checkbox"> Internship</label>
+                        <label><input type="checkbox"> Contract</label>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Categories</h4>
+                        <label><input type="checkbox"> Design</label>
+                        <label><input type="checkbox"> Sales</label>
+                        <label><input type="checkbox"> Marketing</label>
+                        <label><input type="checkbox"> Business</label>
+                        <label><input type="checkbox"> Human Resources</label>
+                        <label><input type="checkbox"> Finance</label>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Job Level</h4>
+                        <label><input type="checkbox"> Entry Level</label>
+                        <label><input type="checkbox"> Mid Level</label>
+                        <label><input type="checkbox"> Senior Level</label>
+                        <label><input type="checkbox"> Director</label>
+                        <label><input type="checkbox"> VP or Above</label>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Salary Range</h4>
+                        <label><input type="checkbox"> $700 - $1000</label>
+                        <label><input type="checkbox"> $1000 - $1500</label>
+                        <label><input type="checkbox"> $1500 - $2000</label>
+                        <label><input type="checkbox"> $3000 or above</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Job Listings Section -->
+            <section class="job-listings">
+                <div class="job-card">
+                    <h3>Social Media Assistant</h3>
+                    <p>Nomad - Paris, France</p>
+                    <p>Full-Time | Marketing | Design</p>
+                    <div class="job-meta">
+                        <span>5 applied of 10 capacity</span>
+                    </div>
+                </div>
+                <div class="job-card">
+                    <h3>Brand Designer</h3>
+                    <p>Nomad - Paris, France</p>
+                    <p>Full-Time | Business | Design</p>
+                    <div class="job-meta">
+                        <span>5 applied of 10 capacity</span>
+                    </div>
+                </div>
+                <!-- Repeat for each job card as per the Figma design -->
+            </section>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">...</a>
+                <a href="#">33</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

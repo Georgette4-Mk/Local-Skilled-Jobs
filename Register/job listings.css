@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+}
+.container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    
+}
+.side-bar{
+   height: 100vh;
+   background-color: rgba(138, 12, 228, 0.058);
+   margin: 0;
+   position: fixed;
+   overflow: visible;
+  
+   
+}
+.side-bar ul li{
+    list-style: none;
+    padding-bottom: 30px;
+}
+.side-bar ul li a{
+    text-decoration: none;
+    color: gray;
+    margin-left: 1rem;
+    padding: 10px;
+    
+}
+.side-bar ul li i{
+    padding-right: 5px;
+    color: indigo;
+    transition: all 3s ease;
+
+}
+h1:last-child{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+.side-bar ul li a.active{
+    background-color: rgba(76, 0, 130, 0.159);
+    color: indigo;
+    margin: 5px;
+}
+.side-bar ul li a.active:before{
+    content: '';
+    width: 10px;
+    height: 100%;
+    background-color: indigo;
+}
+.side-bar ul li a.active i{
+    color: indigo;
+    margin-left: calc(1rem - 3px);
+    background-color: rgba(76, 0, 130, 0.279);
+}
+.side-bar ul li a:hover{
+    color: indigo;
+    background-color: rgba(76, 0, 130, 0.236);
+}
+.side-bar ul li a:hover i{
+    margin-left: 0.5rem;
+}
+
+.main{
+    
+    width: 200px;
+    
+}
+.head{
+    display: flex;
+    justify-content: center;
+    border: solid 1px;
+    
+    height: 70px;
+    align-items: center;
+    width: 1100px;
+    position: absolute;
+    left: 190px;
+    
+}
+.head h2{
+    background-color: indigo;
+    color: white;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+.head i{
+font-size: 20px;
+margin-right: 20px;
+}
+.social-media{
+    display: grid;
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 500px;
+    padding-left: 100px;
+}
+.social-media .h1{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.social-media p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.tab-titles{
+    display: flex;
+    gap: 20px;
+    font-size: 10px;
+    color: gray;
+}
+
+.select{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 990px;
+    bottom: 10px;
+    min-width: 120px;
+    height: 40px;
+}
+.select-box{
+    border: solid 1px;
+    appearance: none;
+    padding-left: 20px;
+    width: 100px;
+    color: black;
+    background-color: #fff;
+    font-size: 12px;
+}
+.select i{
+    font-size: 15px;
+    position: absolute;
+    left: 25px;
+    top: 14px;
+    color: black;
+}
+.title{
+    display: flex;
+    position: absolute;
+    left: 210px;
+    top: 160px;
+    border: solid 1px lightgray;
+    width: 1000px;
+    padding: 20px;
+}
+
+
+.table-body{
+    display: flex;
+    position: absolute;
+    right: 600px;
+    top: 230px;
+    font-family: sans-serif;
+    left: 250px;
+    background-color: #fff;
+    width: 1000px;
+    border-radius: .8rem;
+    justify-content: center;
+    height: 600px;
+    
+}
+.table{
+    width: 100px;
+}
+tbody{
+    border: solid 1px lightgray;
+    margin-bottom: 100px;
+}
+thead{
+    border: solid 1px lightgray;
+    gap: 10px;
+}
+.full{
+    margin-left: 40px;
+}
+.boxs{
+    position: absolute;
+    left: -40px;
+    top: 10px;
+}
+table, th, td{
+    border-collapse: collapse;
+}
+ thead th{
+    margin-left: 100px;
+    color: gray;
+    padding-right: 80px;
+    background-color: white;
+    font-size: small;
+    height: 30px;
+}
+
+.table-body tbody td {
+    font-size: 14px;
+    width: 100%;
+}
+tbody tr:nth-child(even){
+    background-color: rgba(76, 0, 130, 0.044);
+}
+tbody tr:hover{
+    background-color: rgba(0, 0, 0, 0.055);     
+}
+.review{
+    background-color: white;
+    width: 70px;
+    border: solid 1px orange;
+    border-radius: 1rem;
+    padding-left: 9px;
+    color: orange;
+}
+.see{
+    color: black;
+    height: 30px;
+    padding-top: 10px;
+}
+
+.closed{
+    background-color: white;
+    width: 50px;
+    border-radius: 1rem;
+    border: solid 1px red;
+    padding-left: 10px;
+    color:red;
+}
+.live{
+    background-color: white;
+    width: 40px;
+    border-radius: 1rem;
+    border: solid 1px lightgreen;
+    padding-left: 15px;
+    color: lightgreen;
+}
+.fulltime{
+    background-color: white;
+    width: 70px;
+    border-radius: 1rem;
+    border: solid 1px indigo;
+    padding-left: 15px;
+    color: indigo;
+}
+.parttime{
+    background-color: white;
+    width: 70px;
+    border-radius: 1rem;
+    border: solid 1px greenyellow;
+    padding-left: 15px;
+    color:greenyellow;
+}
+
+
+
+    .dot{
+        display: flex;
+        position: absolute;
+        top: 52px;
+        right: 10px;
+        font-size: 30px;
+    }
+    .dot2{
+        position: absolute;
+        top: 130px;
+        right: 10px;
+        font-size: 30px;
+    }
+    .dot3{
+        position: absolute;
+        top: 210px;
+        right: 10px;
+        font-size: 30px;
+    }
+    .dot4{
+        position: absolute;
+        top: 290px;
+        right: 10px;
+        font-size: 30px;
+    }
+    .dot5{
+        position: absolute;
+        top: 370px;
+        right: 10px;
+        font-size: 30px;
+    }
+    .dot6{
+        position: absolute;
+        top: 450px;
+        right: 10px;
+        font-size: 30px;
+    }
+    .dot7{
+        position: absolute;
+        top: 530px;
+        right: 10px;
+        font-size: 30px;
+    }
+   
+.table-body tbody {
+    color:black;
+}
+.table-body tbody td i{
+    color: black;
+    padding-right: 5px;
+}
+.table-body tbody td .box{
+    margin-right: 10px;
+}
+
+.foot{
+    display: flex;
+    position: absolute;
+    right: 600px;
+    top: 850px;
+    
+}
+.simi-footer{
+    position: absolute;
+    right: 200px;
+    display: flex;
+}
+.simi-footer p{
+    border: solid 1px lightgray;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 40px;
+    height: 20px;
+    margin-left: 10px;
+}
+.simi-footer h3{
+    font-size: 12px;
+    color: gray;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.simi-footer h4{
+    margin-top: 10px;
+}
+.number{
+    position: absolute;
+    left: 450px;
+    display: flex;
+}
+.number p{
+    display: flex;
+    position: absolute;
+    left: 60px;
+    top: 5px;
+}
+.number span{
+    color: #fff;
+    background-color: indigo;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.number h2{
+    position: absolute;
+    left: -30px;
+}
+.number h3{
+    position: absolute;
+    left: 90px;
+    bottom: 2px;
+    font-size: 22px;
+    font-weight: bolder;
+}

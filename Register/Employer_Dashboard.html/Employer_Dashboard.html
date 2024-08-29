@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2></h2>
+            </div>
+            <div class="logo">LJ</div>
+            <nav class="menu">
+                <a href="#">Dashboard</a>
+                <a href="#">Messages</a>
+                <a href="#">Profile</a>
+                <a href="#">All Applicants</a>
+                <a href="#">Job Listing</a>
+            </nav>
+            <div class="settings">
+                <a href="#">Settings</a>
+                <a href="#">Help Center</a>
+            </div>
+            <div class="profile">
+                <img src="" alt="User Photo">
+                <span>.......</span>
+                <span>......</span>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Good morning, Maria</h1>
+                <p>Here is your job listings statistic report from July </p>
+            </header>
+            <section class="statistics">
+                <div class="stat-box1">
+                    <h2>0</h2>
+                    <p>New candidates to review</p>
+                </div>
+                <div class="stat-box2">
+                    <h2>0</h2>
+                    <p>Schedule for today</p>
+                </div>
+                <div class="stat-box3">
+                    <h2>0</h2>
+                    <p>Messages received</p>
+                </div>
+            </section>
+
+            <section class="statistics">
+                <div class="job-stats">
+                    <h2>Job statistics</h2>
+                    <div class="tabs">
+                        <button>Week</button>
+                        <button>Month</button>
+                        <button>Year</button>
+                    </div>
+                    <div class="chart">
+                        <!-- Chart will go here -->
+                    </div>
+                    <div class="metrics">
+                        <div>Job Views: 0</div>
+                        <div>Job Applied: 0</div>
+                    </div>
+                </div>
+                <div  class ="job-open">
+                    <h2>Job Open</h2>
+                    <div> Jobs Opened :0</div>
+                </div>
+                <div class="applicant-summary">
+                    <h2>Applicants Summary</h2>
+                    <div> Applicants: 0</div>
+                    <div>Full Time: 0</div>
+                    <div>Part-Time: 0</div>
+                    
+                    
+                </div>
+            </section>
+           
+
+
+            <section class="job-updates">
+                <h2>Job Updates</h2>
+                <div class="job-listing">
+                    <div class="job-card">
+                        <h3>Plumbers</h3>
+                        <p>Nomad - Sandpit, Buea</p>
+                        <span class="label">Full-Time</span>
+                        <span class="categories">Barbers</span>
+                        <span class="capacity">5 applied of 9 capacity</span>
+                    </div>
+                    <div class="job-card">
+                        <h3>Cooks</h3>
+                        <p>Nomad - Muea, Buea</p>
+                        <span class="label">Full-Time</span>
+                        <span class="categories">Cooks</span>
+                        <span class="capacity">3 applied of 20 capacity</span>
+                    </div>
+                    <div class="job-card">
+                        <h3>Carpenters</h3>
+                        <p>TerraForm - Bonduma, Buea</p>
+                        <span class="label">Full-Time</span>
+                        <span class="categories">Cleaners</span>
+                        <span class="capacity">5 applied of 20 capacity</span>
+                    </div>
+                    <div class="job-card">
+                        <h3>Electricians</h3>
+                        <p>ClassPass - DirtySouth, Buea</p>
+                        <span class="label">Full-Time</span>
+                        <span class="categories">Cobblers</span>
+                        <span class="capacity">5 applied of 6 capacity</span>
+                    </div>
+
+                    <!-- Form Section -->
+            <div class="form-section">
+                <h2>Submit a Job</h2>
+                <form action="/submit-job" method="post">
+                    <div class="form-group">
+                        <label for="job-title">Job Title</label>
+                        <input type="text" id="job-title" name="job-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="capacity">Capacity</label>
+                        <input type="number" id="capacity" name="capacity" required>
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+
+    <div class="social__icons">
+        <a href="/" class="social__icon--link" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="/" class="social__icon--link" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="/" class="social__icon--link" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="/" class="social__icon--link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="/" class="social__icon--link" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHuntly Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+     <div class="container">
+    <aside class="sidebar">
+        <div class="profile-section">
+            <img src="profile.jpg" alt="Jake Gyll" class="profile-img">
+            <h3 class="profile-name">Jake Gyll</h3>
+            <p class="profile-email">jakegyll@email.com</p>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../dash2/index.html">Dashboard</a></li>
+                <li><a href="../messages/Messages.html">Messages</a></li>
+                <li><a href="../applications/Applications.html" class ="active">My Applications</a></li>
+                <li><a href="Jobs.html">Find Jobs</a></li>
+                <li><a href="Brows.html">Browse Companies</a></li>
+                <li><a href="Profile.html">My Public Profile</a></li>
+            </ul>
+        </nav>
+        <div class="settings">
+            <a href="#">Settings</a>
+            <a href="#">Help Center</a>
+        </div>
+    </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="main-header">
+            <h2>My Applications</h2>
+            <button class="btn-primary">Back to homepage</button>
+        </header>
+
+        <section class="applications-section">
+            <div class="info-box">
+                <h3>Keep it up, Jake</h3>
+                <p>Here is the job applications status from July 19 - July 25.</p>
+                <div class="new-feature">
+                    <p><strong>New Feature:</strong> You can request a follow-up 7 days after applying for a job if the application status is in review.</p>
+                </div>
+            </div>
+
+            <div class="applications-history">
+                <h3>Applications History</h3>
+                <div class="search-filter">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="btn-filter">Filter</button>
+                </div>
+                <table class="applications-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Company Name</th>
+                            <th>Role</th>
+                            <th>Date Applied</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic Rows Inserted Here via PHP -->
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <button class="btn-pagination">1</button>
+                    <button class="btn-pagination">2</button>
+                    <button class="btn-pagination">3</button>
+                    <!-- More pages... -->
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

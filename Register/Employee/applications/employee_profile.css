@@ -1,0 +1,107 @@
+/* Employee Profile Page CSS Styles */
+.employee-profile-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employee-profile-header {
+    background-color: rgb(2, 2, 51);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .employee-profile-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .employee-profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  .employee-profile-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .employee-profile-details {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .employee-profile-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .employee-profile-details li {
+    margin-bottom: 10px;
+  }
+  
+  .employee-profile-contact {
+    padding: 20px;
+  }
+  
+  .employee-profile-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .employee-profile-contact li {
+    margin-bottom: 10px;
+  }
+  
+  .employee-profile-skills {
+    padding: 20px;
+  }
+  
+  .employee-profile-skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .employee-profile-skills li {
+    margin-bottom: 10px;
+  }
+  
+  .employee-profile-experience {
+    padding: 20px;
+  }
+  
+  .employee-profile-experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .employee-profile-experience li {
+    margin-bottom: 10px;
+  }
+  
+  .employee-profile-education {
+    padding: 20px;
+  }
+  
+  .employee-profile-education ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .employee-profile-education li {
+    margin-bottom: 10px;
+  }

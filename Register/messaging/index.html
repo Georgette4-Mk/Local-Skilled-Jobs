@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">LJ</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">All Applicants</a></li>
+                    <li><a href="#">Job Listing</a></li>
+                </ul>
+            </nav>
+            <div class="settings">
+                <a href="#">Settings</a>
+                <a href="#">Help Center</a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="message-list">
+                <div class="message-item active">
+                    <img src="profile.jpg" alt="Tamufor Josia">
+                    <div>
+                        <h4>Tamufor Josia</h4>
+                        <p>We want to invite you for a quick interview</p>
+                    </div>
+                </div>
+                <div class="message-item">
+                    <img src="profile.jpg" alt="Emmanuel Nyamsic">
+                    <div>
+                        <h4>Emmanuel Nyamsic</h4>
+                        <p>Hey thanks for your interview...</p>
+                    </div>
+                </div>
+                <!-- Add more message items here -->
+            </div>
+
+            <div class="message-content">
+                <div class="message-header">
+                    <img src="profile.jpg" alt="Tamufor Josia">
+                    <h4>Tamufor Josia</h4>
+                    <span>Electrical Candidate</span>
+                </div>
+                <div class="message-body">
+                    <div class="message-bubble sent">
+                        <p>Hey Jan, I wanted to reach out because we saw your work contributions and were impressed by your work. We want to invite you for a quick interview</p>
+                    </div>
+                    <div class="message-bubble received">
+                        <p>Hi Fabiola, sure I would love to. Thanks for taking the time to see my work!</p>
+                    </div>
+                </div>
+                <div class="message-input">
+                    <input type="text" placeholder="Reply message">
+                    <button>Send</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

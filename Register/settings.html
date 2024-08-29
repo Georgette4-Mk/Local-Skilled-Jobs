@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+   <!--<div class="container"> 
+        <div>
+            <h1>Settings</h1>
+        </div>
+
+        
+                      
+
+                    
+            
+              
+    
+    <!--<div>
+        <h3>Conservation view </h3>
+    </div>
+
+
+    <div>
+    <label for="radio1" class="flex">
+        <input type="radio" name="filter" id="radio1">
+        <span>Newest On Top</span>
+    </label>
+</div>
+
+
+<div>
+<label for="radio2" class="flex">
+    <input type="radio" name="filter" id="radio2">
+    <span>Newest On Bottom</span>
+</label>
+</div>
+
+
+<div>
+<label for="radio3" class="flex">
+    <input type="radio" name="filter" id="radio3">
+    <span>Off</span>
+</label>
+</div>    
+</div>
+
+<div>
+    
+   <h3> Reading Pannel</h3>
+</div>
+
+<div>
+    <label for="radio4" class="flex">
+        <input type="radio" name="show-mode" id="radio4">
+        <span>Show On The Right</span>
+    </label>
+</div>
+
+<div>
+    <label for="radio5" class="flex">
+        <input type="radio" name="show-mode" id="radio5">
+        <span>Show On The Left</span>
+    </label>
+</div>
+
+<div>
+    <label for="radio6" class="flex">
+        <input type="radio" name="show-mode" id="radio6">
+        <span>Off</span>
+    </label>
+</div>
+
+<div class="bottom">
+    <span>View all settings...</span>
+</div>
+</div>-->
+
+       
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post a job page</title>
+    <script src="https://kit.fontawesome.com/f8816b6217.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="job listings.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+    <div class="side-bar">
+        <ul>
+            <li>
+                <i class="fa-solid fa-house"></i> <a href="#" class="activ">Dashboard</a>
+            </li>
+            <li>
+                <i class="fa-regular fa-message"></i> <a href="Messages.php">Messages</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-building"></i><a href="#"> Profile</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-building"></i><a href="#"> All applicants</a>
+            </li>
+            
+           
+            
+            <li>
+                <i class="fa-regular fa-calendar-days"></i><a href="settings.html" class="tab" onclick="opentab ('settings')">Settings</a>
+            </li>
+
+            <li>
+                <i class="fa-regular fa-calendar-days"> </i><a href="#">Help Center</a>
+            </li>
+            <li>
+            <h1>LJ</h1>
+            </li>
+        </ul>
+    </div>
+    </div>
+    
+
+       
+
+        
+        
+    
+    <div class="content">
+        <h2>Settings</h2>
+
+        
+
+            <div class="tab-titles">
+                <p class="tab-links active-link">Display </p>
+                <p class="tab-links">Overview</p>
+                <p class="tab-links">Team </p>
+            </div>
+    
+            <div class="tab-contents active-tab" id="display">
+                <ul>
+                    <li> 
+                       <div>
+                        <label for="togg-1">
+                            <span>Dark Mode</span>
+                           <input type="checkbox" id="togg-1">
+                            <div class="toggle-container">
+                                <span class="toggle"></span>
+                                <span class="toggle-c"></span>  
+                            
+                       </div> 
+                    </li>
+
+                    <li>
+                        <div>
+                            <label for="togg-2">
+                                <span>Desktop Notification</span>
+                                <input type="checkbox" id="togg-2">
+
+                                <div class="toggle-container">
+                                    <span class="toggle"></span>
+                                    <span class="toggle-c"></span>
+                                </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <label for="togg-3">
+                                <span>Focused inbox</span>
+                                <input type="checkbox" id="togg-3">
+
+                                <div class="toggle-container">
+                                    <span class="toggle"></span>
+                                    <span class="toggle-c"></span>
+                                  </div>
+                            </label> 
+                    </li>             
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+                <div class="tab-contents" id="overview">
+                    <h3>Basic Information</h3>
+        <p>This is company information that you can update anytime.</p>
+
+        <hr>
+
+        <h3>Company Logo</h3>
+        <p>This image will be shown publicly as company</p>
+
+        <div class="company-logo">
+            
+            <img src="company-logo.png" alt="Company Logo">
+            <p>Click to replace or drag and drop<br>SVG, PNG, JPG or GIF (max 400x400px)</p>
+        </div>
+
+        <hr>
+
+        <h3>Company Details</h3>
+        <p>Update your company details here.</p>
+
+        <div class="form-group">
+            <label for="companyName">Company name</label>
+            <input type="text" id="companyName" placeholder="Nomad">
+        </div>
+
+        <div class="form-group">
+            <label for="companyWebsite">Website</label>
+            <input type="text" id="companyWebsite" placeholder="https://www.nomad.com">
+        </div>
+        
+        <div class="form-group">
+            <label for="companyLocation">Location</label>
+            <select id="companyLocation">
+                <option value="England">Cameroon</option>
+                <option value="England">Cameroon</option>
+                <option value="England">Cameroon</option>
+            </select>
+        </div>
+    
+   <div class="form-group">
+    <label for="companyEmployee">Employee</label>
+    <select id="companyEmployee">
+        <option value="1-50">1-50</option>
+    </select>
+   </div>
+
+      <div class="form-group">
+        <label for="companyIndustry">Industry</label>
+        <select  id="companyIndustry">
+            <option value="technology">Technology</option>
+        </select>
+      </div>
+
+     <div class="form-group">
+        <label for="companydate">Date Founded</label>
+        <div class="pick-date">
+            <select id="companyDateFoundedMonth">
+                <option value="31">31</option>
+            </select>
+            <select id="companyDateFoundedYear">
+                <option value="July">July</option>
+            </select>
+            <select id="companyDateFoundedDay">
+                <option value="2024">2024</option>
+            </select>
+        </div>
+     </div>
+
+     <div class="form-group">
+        <label for="companyTechStack">Tech Stack</label>
+        <div class="form-check">
+            <input type="checkbox" id="html5" checked>
+            <label for="html">Html 5</label>
+        </div>
+
+     </div>
+      <hr class="horizontal-line">
+
+      <div class="section-title">About Company</div>
+      <p>Nomad is a leading technology company that provides innovative solutions to help businesses thrive in the digital age.</p>
+     <div class="form-group">
+        <label for="company-description" class="form-label">Description</label>
+        <textarea id="company-description" class="form-textarea" placeholder="Nomad is part of the information technology indeustry."></textarea>
+        <p>Maximum 500 characters</p>
+
+        <div class="editor">
+            <button class="btn">B</button>
+            <button class="btn">I</button>
+            <button class="btn">=</button>
+            <button class="btn">=</button>
+            <button class="btn">@</button>
+        </div>
+     </div>
+
+      <button class="btn">Save Changes</button>
+    </div>
+</div>
+
+</div>
+
+                                 
+                                  
+                                          
+    
+        
+        
+
+    <!-- JavaScript code here -->
+
+    <script>
+
+        const tabLinks = document.querySelectorAll('.tab-links');
+        const tabContents = document.querySelectorAll('.tab-contents');
+
+        tabLinks.forEach((link, index) => {
+            link.addEventListener('click', () => {
+            
+                // Remove active class from all tab links and contents
+                tabLinks.forEach(l => l.classList.remove('active-link'));
+                tabContents.forEach(c => c.classList.remove('active-tab'));
+
+                // Add active class to the clicked tab link and corresponding content
+                link.classList.add('active-link');
+                tabContents[index].classList.add('active-tab');
+            });
+        });
+
+       // Get the checkbox element
+const darkModeToggle = document.getElementById('togg-1');
+
+// Get the body element
+const body = document.body;
+
+// Function to toggle the dark mode
+function toggleDarkMode() {
+  body.classList.toggle('dark-mode');
+
+  // Save the preference in local storage
+  localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+}
+
+// Check if dark mode was previously enabled
+const isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
+if (isDarkModeEnabled) {
+  body.classList.add('dark-mode');
+  darkModeToggle.checked = true;
+}
+
+// Add event listener to the checkbox
+darkModeToggle.addEventListener('change', toggleDarkMode);
+
+
+    </script>
+</body>
+</html>
+</body>
+</html>

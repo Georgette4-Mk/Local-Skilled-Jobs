@@ -1,0 +1,390 @@
+/*body, html{
+    background-color:azure;
+    color: #171730;
+    user-select: none;
+    width: 100%;
+    height: 100vh;
+   /* display: flex;*/
+   /* justify-content: center;
+    align-items: center;
+}*/
+
+
+.container{
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  
+}
+.side-bar{
+ height: 100vh;
+ background-color: rgba(138, 12, 228, 0.058);
+ margin: 0;
+ position: fixed;
+ overflow: visible;
+
+ 
+}
+.side-bar ul li{
+  list-style: none;
+  padding-bottom: 30px;
+}
+.side-bar ul li a{
+  text-decoration: none;
+  color: gray;
+  margin-left: 1rem;
+  padding: 10px;
+  
+}
+.side-bar ul li i{
+  padding-right: 5px;
+  color: indigo;
+  transition: all 3s ease;
+
+}
+
+h1:last-child{
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+.side-bar ul li a.active{
+  background-color: rgba(76, 0, 130, 0.159);
+  color: indigo;
+  margin: 5px;
+}
+.side-bar ul li a.active:before{
+  content: '';
+  width: 10px;
+  height: 100%;
+  background-color: indigo;
+}
+.side-bar ul li a.active i{
+  color: indigo;
+  margin-left: calc(1rem - 3px);
+  background-color: rgba(76, 0, 130, 0.279);
+}
+.side-bar ul li a:hover{
+  color: indigo;
+  background-color: rgba(76, 0, 130, 0.236);
+}
+.side-bar ul li a:hover i{
+  margin-left: 0.5rem;
+}
+
+
+
+
+span{
+    font-weight: 500;
+    font-family: "poppins";
+}
+
+.toggle-container{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.toggle{
+    width: 60px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: grey;
+    display: inline-block;
+
+} 
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 15px;
+    
+}
+
+.tab-links{
+    margin-right: 300px; /* push the headings apart(display...) */
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: skyblue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    margin-left: -30px;
+}
+
+.tab-contents ul li  span{
+    color: blue;
+    font-size: 14px;
+}
+   
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+   .toggle-c{
+   width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition: 0.5s all;
+    border: 1px solid grey;
+}
+
+/* Removes the check boxes beside*/
+
+input[ type="checkbox"]{
+    display: none;
+}
+
+input[ type="checkbox"]:checked + div .toggle-c{
+    
+    right: 50%;
+    background-color: #303050;
+    border-color: #303050;
+}
+
+input[type="radio"]{
+    border: 0px;
+    width: 10%;
+    height: 20px;
+    accent-color: pink;
+}
+
+
+
+/*Here*/
+
+/*Shows the dark mode, notification & inbox*/
+
+.toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  
+  
+
+  /* Dark mode styles */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+  }
+
+
+label, input[type="radio"]{
+    cursor: pointer;
+}
+
+ /* Affects the side bar */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #fff;
+    height: 100vh;
+    width: 200px;
+    float: left;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+}
+
+.sidebar h3 {
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a{
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar a.active{
+  font-weight: bold;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+
+
+
+
+.company-logo p {
+    margin-bottom: 0;
+}
+
+
+
+.tab-contents h3{
+  align-items: center;
+  margin-left: 45%;
+}
+.tab-contents p{
+  align-items: center;
+  margin-left: 45%;
+}
+
+hr {
+  margin: 40px 190px; /* add 190px margin to left and right sides */
+}
+.company-logo {
+  border: 1px dashed #ccc;
+  padding: 30px;
+  text-align: center;
+  width: 600px;
+  border-radius: 5px;
+  margin-left: 45%;
+  margin-top: 20px;
+ 
+   
+}
+
+  .tab-contents{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #333;
+  }
+
+  
+  .form-group{
+margin-bottom: 20px;
+margin-left: 500px; /* adjust the margin to create space for the sidebar */
+padding: 20px;
+align-items: center;
+align-content: center;
+  }
+  .companyName{
+    padding: 30px;
+    height: 20px;
+    width: 30px;
+  }
+
+  .form-label{
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    margin-left: 45%;
+   
+   
+  }
+
+  .form-input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 45%;
+  }
+
+  .form-textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize:vertical;
+  }
+
+  .form-select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-sizing: border-box;
+    appearance: none;
+    background-position:right 10px center ;
+  }
+
+  .horizontal-line{
+    margin-left: 14%;
+  }
+  
+  .section-title{
+    margin-left: 45%;
+  }
+  .btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 80%;
+  }
+
+  .btn:hover{
+    background-color: #0056b3;
+  }
+  .footer{
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    margin-left: 45%;
+  }
